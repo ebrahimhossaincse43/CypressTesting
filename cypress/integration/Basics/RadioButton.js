@@ -8,10 +8,28 @@ describe('My First Test', () => {
       cy.title().should('eq', 'ToolsQA')
     })
 
-    it('Radio Button', () => {      
-    cy.xpath("//label[contains(text(),'Yes')]").should('be.visible').should('not.be.enabled').click()
-    cy.xpath("//label[contains(text(),'Impressive')]").should('be.visible').should('not.be.enabled').click()
-    cy.xpath("//label[contains(text(),'No')]").should('be.visible').should('not.be.enabled')
-    cy.wait(2000)   
+    it('Radio Button', () => {   
+      let xpath_yes = "//label[contains(text(),'Yes')]"
+      let xpath_impressive = "//label[contains(text(),'Impressive')]"
+      let xpath_no = "//label[contains(text(),'No')]"
+
+      selectRadioButton(xpath_yes, 'Yes' )
     })
+    
   })
+
+  //Radio Button Select using custom method
+  function selectRadioButton(xpath, options){
+    if(options.localeCompare('Yes')){
+      cy.xpath(xpath).should('be.visible').should('not.be.enabled').click()
+      cy.wait(2000)
+    }
+    else if(options.localeCompare('Impressive')){
+      cy.xpath(xpath).should('be.visible').should('not.be.enabled').click()
+      cy.wait(2000)
+    }
+    else if(options.localeCompare('No')){
+      cy.xpath(xpath).should('be.visible').should('not.be.enabled')
+      cy.wait(2000)
+    }
+  }
