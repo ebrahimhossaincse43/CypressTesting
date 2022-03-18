@@ -11,6 +11,7 @@
   "devDependencies": {
     "@faker-js/faker": "^6.0.0-alpha.6",
     "cypress": "^9.4.1",
+    "cypress-file-upload": "^5.0.8",
     "cypress-xpath": "^1.6.2"
   },
   "dependencies": {
