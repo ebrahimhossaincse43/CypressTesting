@@ -24,7 +24,7 @@ describe('Video Recording', function () {
       cy.xpath(currentAddress_xapth).should('be.visible').should('be.enabled').type(this.data.currentAddress)
       cy.xpath(permanetAddress_xpath).should('be.visible').should('be.enabled').type(this.data.permanentAddress)
       cy.xpath(button_xpath).should('be.visible').should('be.enabled').click()
-      cy.wait(2000) 
+      cy.wait(2000)
     })
   })
 
