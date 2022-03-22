@@ -1,3 +1,16 @@
 {
+    "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+    "reportDir": "cypress/report/cypress-report",
+    "charts": true,
+    "overwrite":false,
+    "reportPageTitle": "Cypress Report",
+    "embeddedScreenshots": true,
+    "inlineAssets": true,
+    "html":true,
+    "json":true,
+    "timestamp": "mmddyyyy_HHMMss"
+    
+  },
     "video": true
 }

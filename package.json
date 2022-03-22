@@ -12,7 +12,10 @@
     "@faker-js/faker": "^6.0.0-alpha.6",
     "cypress": "^9.4.1",
     "cypress-file-upload": "^5.0.8",
-    "cypress-xpath": "^1.6.2"
+    "cypress-xpath": "^1.6.2",
+    "mochawesome": "^7.1.2",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.1.1"
   },
   "dependencies": {
     "faker": "^6.6.6"
