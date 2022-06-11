@@ -8,6 +8,7 @@ describe('Cypress Basic', () => {
 
     //Single Value Select
     it('Drop Down handling part-01 ', function (){
+        //[attributeName = \'value\']
         cy.get('[name=\'sgender\']').select('male').invoke('val').then((value)=>{
             cy.log('Selected Value = '+ value)
         })

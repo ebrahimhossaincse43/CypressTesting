@@ -27,6 +27,7 @@ describe('Cypress Basic', () => {
         cy.go('back') //cy.go(-1)
         //forward
         cy.go('forward') //cy.go(1)
+        cy.wait(1000)
         cy.reload()
 
     })

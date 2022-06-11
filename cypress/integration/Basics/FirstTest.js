@@ -10,6 +10,4 @@ describe('My First Test', () => {
       
     cy.xpath("//a[contains(text(),'Log in')]").click()
     })
-
-
   })
